@@ -73,3 +73,35 @@ Pest Detected?
       ▼             ▼
  OLED Display    Buzzer Alert
 ```
+
+---
+
+# 📸 Hardware Setup
+
+### ESP32-CAM Prototype
+
+![ESP32-CAM Setup](ESP32-CAM%20setup.jpeg)
+
+### Arduino + OLED Demonstration
+
+![Arduino Prototype](Arduino%20%2B%20OLED%20setup.jpeg)
+
+---
+
+# 📊 Results
+
+- Successfully trained a lightweight pest detection model using TensorFlow.
+- Converted the trained model into TensorFlow Lite format for embedded deployment.
+- Deployed the model on an ESP32-CAM using TensorFlow Lite Micro.
+- Demonstrated real-time on-device inference without cloud connectivity.
+- Built a proof-of-concept object detection system using an IR sensor, OLED display, and buzzer.
+
+---
+
+# 🚀 Future Improvements
+
+- Improve model accuracy using a larger dataset.
+- Add support for additional pest classes.
+- Optimize inference speed on edge devices.
+- Integrate wireless notifications and cloud logging.
+- Design a compact PCB for field deployment.
