@@ -1,28 +1,75 @@
+# 🐛 Edge AI Pest Detection System using ESP32-CAM
 
+An Edge AI based pest detection system capable of performing real-time image classification using **TensorFlow Lite Micro** deployed on an **ESP32-CAM**.
 
-PYTHON CODE:
+This project was developed as part of the Robotics & Automation Tinker Programme to demonstrate how Machine Learning models can be deployed on resource-constrained embedded hardware for agricultural applications.
 
-PEST DATASET: https://www.kaggle.com/datasets/simranvolunesia/pest-dataset
-^^^USE THE FOLLOWING CLASSES TO TRAIN THE DATA: armyworm, beetle, bollworm, grasshopper
+---
 
-Convert tflite to .h file: "xxd -i pest_model.tflite > pest_model.h"
+## 🚀 Features
 
+- Real-time pest detection on ESP32-CAM
+- TensorFlow Lite Micro inference
+- On-device image classification
+- Camera-based pest recognition
+- IR sensor based object detection
+- OLED display for user feedback
+- Buzzer alert system
+- Edge AI deployment without cloud connectivity
 
+- ---
 
-VIRTUAL ENVIRONMENT: couldn't be included in the repository due to size limitations
-pip install the following libraries in ur virtual environment --> "tensorflow", "keras". estimated size: 600MB
+# 🛠 Hardware Components
 
+- ESP32-CAM
+- Arduino Uno (Functionality Demonstration)
+- IR Sensor
+- OLED Display (I2C)
+- Active Buzzer
+- Breadboard & Jumper Wires
 
+---
 
+# 💻 Software & Technologies
 
-ARDUINO IDE:
+- Python
+- TensorFlow
+- TensorFlow Lite
+- TensorFlow Lite Micro
+- Arduino IDE
+- Embedded C++
+- ESP32 Camera Library
+- Edge AI
+- Computer Vision
 
-Installation libraries: download the following repo and manually place it in the libraries folder of the Arduino IDE
-link: https://github.com/tensorflow/tflite-micro
-NOTE: rename the library to "TFLiteMicro"
+---
 
-While configuring the Arduino IDE for the ESP-32S in "boards" choose the "ESP32 DEV MODULE"
+# 🧠 Project Workflow
 
-
-ALSO HAD MADE A SIMPLIFIED VERSION TO DEMONSTRATE FUNCTIONALITY LABELED AS "FUNCTIONALITY" using an Arduino, IF Sensor,
-OLED Display, Buzzer
+```text
+Pest Image Dataset
+        │
+        ▼
+Train CNN Model (TensorFlow)
+        │
+        ▼
+Convert to TensorFlow Lite (.tflite)
+        │
+        ▼
+Convert Model to C Header (.h)
+        │
+        ▼
+Deploy on ESP32-CAM
+        │
+        ▼
+Capture Live Image
+        │
+        ▼
+Run On-device Inference
+        │
+        ▼
+Pest Detected?
+      ┌──────┴──────┐
+      ▼             ▼
+ OLED Display    Buzzer Alert
+```
